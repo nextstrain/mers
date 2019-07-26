@@ -1,1 +1,2 @@
-# mers
+# nextstrain.org/mers
+
