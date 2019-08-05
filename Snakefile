@@ -8,7 +8,7 @@ rule files:
         input_fasta = "data/mers.fasta",
         dropped_strains = "config/dropped_strains.txt",
         reference = "config/mers_reference.gb",
-        colors = "config/colors.tsv",
+        #colors = "config/colors.tsv",
         auspice_config = "config/auspice_config.json"
 
 files = rules.files.params
@@ -219,7 +219,7 @@ rule export:
         traits = rules.traits.output.node_data,
         nt_muts = rules.ancestral.output.node_data,
         aa_muts = rules.translate.output.node_data,
-        colors = files.colors,
+        #colors = files.colors,
         auspice_config = files.auspice_config
     output:
         auspice_tree = rules.all.input.auspice_tree,
